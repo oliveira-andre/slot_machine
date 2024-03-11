@@ -9,26 +9,43 @@
   </head>
 
   <body>
+    <audio id="lever_sound" controls>
+      <source src="music/lever_slot_machine_sound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="selection_sound" controls>
+      <source src="music/selection_slot_machine_sound.mp3" type="audio/mpeg">
+    </audio>
     <div id="app">
-      <h2>🎰 GOOD LUCK! 🎰</h2>
+      <div class="slot-machine">
+        <div class="machine-header">
+          <h2>🎰 JACKPOT! 🎰</h2>
+        </div>
 
-      <div class="doors">
-        <div class="door">
-          <div class="boxes"></div>
+        <div class="reel-panel">
+          <div class="doors">
+            <div class="door">
+              <div class="boxes"></div>
+            </div>
+            <div class="door">
+              <div class="boxes"></div>
+            </div>
+            <div class="door">
+              <div class="boxes"></div>
+            </div>
+          </div>
         </div>
-        <div class="door">
-          <div class="boxes"></div>
-        </div>
-        <div class="door">
-          <div class="boxes"></div>
+
+        <div class="machine-footer">
+          <p class="info"></p>
         </div>
       </div>
 
       <div class="buttons">
-        <button id="spinner">Spin</button>
+        <div class="connector"></div>
+        <button id="spinner">
+          <div class="red-ball"></div>
+        </button>
       </div>
-
-      <p class="info"></p>
     </div>
   </body>
 </html>
